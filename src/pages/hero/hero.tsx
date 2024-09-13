@@ -15,8 +15,9 @@ export default function Hero() {
                 <p className="desktop-only">
                     Olá
                 </p>
-                <h1>Uma solução que irá te ajudar a manter o foco em suas atividades!</h1>
-                <p>Já pensou em conseguir aumentar seu foco e organização, conseguindo melhores resultados no seu trabalho, utilizando métodos
+                <h1>Chat Bot IA personalizável e de fácil integração para seu sistema!</h1>
+                <p>
+                    Já pensou em possuir um chat bot que axilie novos clientes e funcionários e reduza tempo gasto com atendimentos e treinamentos?
                 </p>
                 <div className="flex gap-1">
                     <span><Button text="Cadastre-se" /></span>
