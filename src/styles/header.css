@@ -45,11 +45,16 @@ a {
 
 @media (width >= 1280px) {
   header {
-    position: fixed;
-    margin-left: 100px;
-    left: 20%;
-    z-index: 1;
-    background-color: initial;
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--bg-color-invisible); /* cor branca com 50% de opacidade */
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
   }
 
   nav > img {
