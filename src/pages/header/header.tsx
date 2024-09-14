@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Logo from "../../assets/logo_icon.svg";
 import Close from "../../assets/close_icon.svg";
 import Menu from "../../assets/menu_icon.svg";
@@ -8,12 +8,16 @@ import "../../styles/utility.css";
 
 export default function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
+    useEffect(() => {
+        const atribute = showMobileMenu ? "hidden" : "visible"
 
+        document.documentElement.style.overflowY = atribute
+    }, [showMobileMenu])
     return (
         <>
             <header className="container py-sm">
                 <nav className="flex items-center justify-between">
-                    <img src={Logo} alt="Logo DonaFrost" width={220} height={80} />
+                    <img src={Logo} alt="Logo Datasage" width={220} height={80} />
                     <div className="desktop-only">
                         <ul className="flex gap-1">
                             <li>
@@ -45,22 +49,23 @@ export default function Header() {
                                 <div className="container flex">
                                     <ul>
                                         <li>
-                                            <a href="#hero">Home</a>
+                                            <a href="#hero" onClick={() => setShowMobileMenu(!showMobileMenu)}>Home</a>
                                         </li>
                                         <li>
-                                            <a href="#solution">Soluções</a>
+                                            <a href="#solution" onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                                                Soluções</a>
                                         </li>
                                         <li>
-                                            <a href="#testimonials">Depoimentos</a>
+                                            <a href="#testimonials" onClick={() => setShowMobileMenu(!showMobileMenu)}>Depoimentos</a>
                                         </li>
                                         <li>
-                                            <a href="#pricing">Preços</a>
+                                            <a href="#pricing" onClick={() => setShowMobileMenu(!showMobileMenu)}>Preços</a>
                                         </li>
                                         <li>
-                                            <a href="#contact">Contato</a>
+                                            <a href="#contact" onClick={() => setShowMobileMenu(!showMobileMenu)}>Contato</a>
                                         </li>
                                         <li>
-                                            <a className="reverse-color" href="#">Login</a>
+                                            <a className="reverse-color" href="#" onClick={() => setShowMobileMenu(!showMobileMenu)}>Login</a>
                                         </li>
                                     </ul>
                                     <span onClick={() => setShowMobileMenu(!showMobileMenu)} className="btn-wrapper">

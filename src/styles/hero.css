@@ -1,6 +1,6 @@
 #hero {
-    background: var(--light-gray);
-    border-top: 0.125rem solid #e4e4e4;
+    background: var(--bg-color);
+    border-top: 0.125rem solid var(--bg-color);
     height: 90vh;
     display: flex;
 }
@@ -13,7 +13,7 @@
 }
 
 #hero p {
-    color: var(--second-text-color);
+    color: var(--text-color);
 }
 
 #hero .content {
@@ -36,6 +36,7 @@
     #hero {
         background: var(--bg-color);
         border-top: none;
+        height: 100vh;
 
         > span {
             position: absolute;

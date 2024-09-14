@@ -7,7 +7,7 @@ import "../../styles/utility.css";
 export default function Hero() {
     return (
         <section id="hero">
-            <span className="desktop-only">
+            <span className="desktop-only header-adjust">
                 <img src={HeroRectangleTwo} alt="Retangulo um tela inicial" />
             </span>
             <img src={HeroRectangleOne} alt="Retangulo dois tela inicial" />

@@ -1,30 +1,23 @@
 #solution {
-    background: var(--light-gray);
-    border-top: 0.125rem solid #e4e4e4;
-    height: 90vh;
+    background: var(--bg-color);
+    border-top: 0.125rem solid var(--bg-color);
     display: flex;
 }
 
 
 #solution .content {
-    z-index: 1;
     display: flex;
     flex-direction: column;
-    margin-top: auto;
+    justify-content: center;
     text-align: center;
     gap: 1.75rem;
 }
 
-#solution .content > div {
-    width: fit-content;
-    z-index: 1;
-    align-self: center;
-    margin-bottom: 20%;
-}
-
 .layout {
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+
 }
 
 .card {
@@ -34,10 +27,18 @@
     border-bottom: var(--secondary-color) solid 6px;
     background-color: #F8F8F8;
     border-radius: 6px 6px 0 0;
-    display: flex;
-    flex-direction: column;
+    color: #737373;
+    box-shadow: 0px 0px 2px #FFF;
     align-items: center;
-    margin-top: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+h3 {
+    color: #737373;
 }
 
 .description {
@@ -49,6 +50,12 @@
     #solution {
         background: var(--bg-color);
         border-top: none;
+        height: 100vh;
+
+        .layout {
+            display: flex;
+            gap: 2rem;
+        }
 
         .content p {
             width: 80%;

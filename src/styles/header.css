@@ -11,7 +11,7 @@
 }
 
 .mobile-menu {
-  display: initial;
+  display: fixed;
   z-index: 3;
 }
 
@@ -39,10 +39,17 @@
   font-size: var(--fs-lg);
 }
 
+a {
+  color: var(--text-color);
+}
+
 @media (width >= 1280px) {
   header {
-    position: relative;
+    position: fixed;
+    margin-left: 100px;
+    left: 20%;
     z-index: 1;
+    background-color: initial;
   }
 
   nav > img {

@@ -1,5 +1,6 @@
-import Award from "../../assets/award_icon.svg";
 import Link from "../../assets/link_icon.svg";
+import Watch from "../../assets/watch_icon.svg";
+import UserCheck from "../../assets/user_check_icon.svg";
 import "../../styles/solution.css";
 import "../../styles/utility.css";
 
@@ -11,22 +12,20 @@ export default function Solution() {
                     Soluções
                 </p>
                 <h2>Sob medida para você!</h2>
-                {/* <p>Já pensou em conseguir aumentar seu foco e organização, conseguindo melhores resultados no seu trabalho, utilizando métodos
-                </p> */}
                 <p>
                     Inovação é com a gente! A datasage já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.
                 </p>
-                
+
                 <div className="layout">
-                <div className="card">
-                        <img src={Award} alt="Medalha" width={64} height={64} />
-                    <h3>Ganho de tempo!</h3>
+                    <div className="card">
+                        <img src={Watch} alt="Medalha" width={64} height={64} />
+                        <h3>Ganho de tempo!</h3>
                         <p>
                             Faça perguntas ou até mesmo peça ações para seu próprio chat!
                         </p>
                     </div>
                     <div className="card">
-                        <img src={Award} alt="Medalha" width={64} height={64} />
+                        <img src={UserCheck} alt="Medalha" width={64} height={64} />
                         <h3>Treinamento personalizado por domínio</h3>
                         <p>
                             Você tem um sistema ou um conjunto de informações e quer um chat personalizado para seu uso? Sem problemas!
