@@ -2,6 +2,7 @@
     background: var(--bg-color);
     border-top: 0.125rem solid var(--bg-color);
     display: flex;
+    margin-bottom: 5%;
 }
 
 
@@ -19,26 +20,6 @@
     justify-content: center;
 }
 
-.card {
-    width: 324px;
-    height: 426px;
-    padding: 0px, 1.5rem;
-    border-bottom: var(--secondary-color) solid 6px;
-    background-color: #F8F8F8;
-    border-radius: 6px 6px 0 0;
-    color: #737373;
-    box-shadow: 0px 0px 2px #FFF;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-h3 {
-    color: #737373;
-    margin: 20px;
-}
-
 .description {
     color: var(--primary-color);
     font-weight: var(--fw-bold);
@@ -53,6 +34,7 @@ h3 {
         .layout {
             display: flex;
             gap: 2rem;
+            flex-wrap: wrap;
         }
 
         .content p {

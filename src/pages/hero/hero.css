@@ -3,6 +3,7 @@
     border-top: 0.125rem solid var(--bg-color);
     height: 90vh;
     display: flex;
+    margin-bottom: 5%;
 }
 
 #hero > img {
@@ -29,7 +30,6 @@
 #hero .content > div {
     width: fit-content;
     align-self: center;
-    margin-bottom: 20%;
 }
 
 
