@@ -43,21 +43,13 @@ a {
   color: var(--text-color);
 }
 
-@media (width >= 1280px) {
+@media (width >=1280px) {
   header {
-      position: fixed;
-      z-index: 2;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: var(--bg-color-invisible); /* cor branca com 50% de opacidade */
-      width: 100%;
-      text-align: center;
-      padding: 10px;
-      border-radius: 10px;
+    position: relative;
+    z-index: 1;
   }
 
-  nav > img {
+  nav>img {
     display: initial;
   }
 
