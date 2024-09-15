@@ -2,9 +2,8 @@
     background: var(--bg-color);
     border-top: 0.125rem solid var(--bg-color);
     display: flex;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
-
 
 #solution .content {
     display: flex;
