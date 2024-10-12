@@ -1,5 +1,5 @@
 #testimonials {
-    height: 120vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding-block: 4rem;
@@ -123,8 +123,8 @@
         }
 
         .carousel-card {
-            min-width: 30rem;
-            min-height: 26.875rem;
+            min-width: 25rem;
+            min-height: 20rem;
         }
     }
 }
