@@ -13,7 +13,7 @@ export default function TestimonialCard(props: ITestimonialProps) {
     return (
         <div className="carousel-card">
             <span className='testimony'>
-                <img src={props.imageUrl} alt="" />
+                <img src={props.imageUrl} alt=""  width={75} height={75} />
                 <p>{props.testemunial}</p>
             </span>
             <span className='rating'>

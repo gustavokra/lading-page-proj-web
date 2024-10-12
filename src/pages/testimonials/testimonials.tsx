@@ -31,50 +31,40 @@ export default function Testimonials() {
                         cargo='CEO'
                         name='Teste'
                         testemunial='Slate helps you see how many more days
-                    you need to work to
-                    reach your financial
-                    goal for the month
-                    and year.'/>
+                            you need to work to
+                            reach your financial
+                            goal for the month
+                            and year.'/>
                     <TestimonialCard
                         rating={4}
+                        imageUrl={Head2}
+                        cargo='Ator'
+                        name='James Gosling'
+                        testemunial='Slate helps you see  how many more days 
+                            you need to work to 
+                            reach your financial 
+                            goal for the month 
+                            and year.'/>
+                    <TestimonialCard
+                        rating={3}
                         imageUrl={Head}
                         cargo='CEO'
                         name='Teste'
                         testemunial='Slate helps you see how many more days
-                    you need to work to
-                    reach your financial
-                    goal for the month
-                    and year.'/>
+                            you need to work to
+                            reach your financial
+                            goal for the month
+                            and year.'/>
                     <TestimonialCard
                         rating={4}
-                        imageUrl={Head}
-                        cargo='CEO'
-                        name='Teste'
-                        testemunial='Slate helps you see how many more days
-                    you need to work to
-                    reach your financial
-                    goal for the month
-                    and year.'/>
-                    <TestimonialCard
-                        rating={4}
-                        imageUrl={Head}
-                        cargo='CEO'
-                        name='Teste'
-                        testemunial='Slate helps you see how many more days
-                    you need to work to
-                    reach your financial
-                    goal for the month
-                    and year.'/>
-                    <TestimonialCard
-                        rating={4}
-                        imageUrl={Head}
-                        cargo='CEO'
-                        name='Teste'
-                        testemunial='Slate helps you see how many more days
-                    you need to work to
-                    reach your financial
-                    goal for the month
-                    and year.'/>
+                        imageUrl={Head2}
+                        cargo='Ator'
+                        name='James Gosling'
+                        testemunial='Slate helps you see  how many more days 
+                            you need to work to 
+                            reach your financial 
+                            goal for the month 
+                            and year.'/>
                 </div>
             </section>
         </section>
