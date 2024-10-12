@@ -1,6 +1,6 @@
 #hero {
     background: var(--bg-color);
-    height: 90vh;
+    height: 100vh;
     display: flex;
 }
 

@@ -1,6 +1,7 @@
 import Head from '../../assets/head1.png'
-import './testimonials.css'
+import Head2 from '../../assets/head2.png'
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard'
+import './testimonials.css'
 export default function Testimonials() {
     return (
         <section id='testimonials'>
@@ -16,14 +17,14 @@ export default function Testimonials() {
                 <div className="carousel-content">
                     <TestimonialCard
                         rating={4}
-                        imageUrl={Head}
-                        cargo='CEO'
-                        name='Teste'
-                        testemunial='Slate helps you see how many more days
-                    you need to work to
-                    reach your financial
-                    goal for the month
-                    and year.'/>
+                        imageUrl={Head2}
+                        cargo='Ator'
+                        name='Ryan'
+                        testemunial='Slate helps you see  how many more days 
+                            you need to work to 
+                            reach your financial 
+                            goal for the month 
+                            and year.'/>
                     <TestimonialCard
                         rating={3}
                         imageUrl={Head}

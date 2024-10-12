@@ -6,10 +6,10 @@ import Testimonials from "./testimonials/testimonials";
 export default function Home() {
     return (
         <>
-            <Header/>
-            <Hero/>
-            <Solution/>
-            <Testimonials/>
+            <Header />
+            <Hero />
+            <Solution />
+            <Testimonials />
         </>
     )
 }

@@ -1,9 +1,10 @@
 #testimonials {
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     padding-block: 4rem;
     gap: 2rem;
+    overflow: hidden;
     
     header {
         display: flex;
@@ -26,6 +27,7 @@
     .carousel {
         display: flex;
         width: 80%;
+        overflow: hidden;
     }
     
     .carousel:hover {
@@ -111,8 +113,8 @@
         }
 
         .carousel {
-            overflow-x: hidden;
             width: 50%;
+            /* min-height: 26.875rem; */
         }
 
         .testimony {
