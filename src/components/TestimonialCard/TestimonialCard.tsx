@@ -18,10 +18,10 @@ export default function TestimonialCard(props: ITestimonialProps) {
             </span>
             <span className='rating'>
                 {Array(props.rating).fill(1).map(() =>
-                    <img src={Star} alt="ícone estrela" width={22} height={20} />
+                    <img key={Math.random()} src={Star} alt="ícone estrela" width={22} height={20} />
                 )}
                 {Array(5 - props.rating).fill(1).map(() =>
-                    <img src={StarEmpty} alt="ícone estrela sem fundo" width={20} height={22} />
+                    <img key={Math.random()} src={StarEmpty} alt="ícone estrela sem fundo" width={20} height={22} />
                 )}
             </span>
             <span className='names'>

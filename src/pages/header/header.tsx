@@ -40,7 +40,7 @@ export default function Header() {
                     <div className="desktop-only">
                         <div className="flex items-center">
                             <a className="reverse-color ml-lg" href="">Login</a>
-                            <Button text="Cadastre-se" />
+                            <Button text="Cadastre-se" func={() => console.log("teste1")} />
                         </div>
                     </div>
                     <div className="mobile-menu">
