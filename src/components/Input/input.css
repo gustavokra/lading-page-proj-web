@@ -1,0 +1,6 @@
+.inpt {
+    background-color: var(--light-gray);
+    border: none;
+    border-radius: 0.375rem;
+    padding: 1rem;
+}

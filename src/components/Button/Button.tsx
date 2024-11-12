@@ -3,12 +3,13 @@ import "../../styles/buttons.css"
 interface IButtonProps {
     text: string;
     secondary?: boolean;
-    func: Function;
+    onClick?: () => void
 }
 
-export default function Button({ text, secondary, func}: IButtonProps) {
+export default function Button({ text, secondary, onClick}: IButtonProps) {
     return (
-        <button onClick={() => func} className={secondary ? "btn-secondary" : "btn-primary"}>
+        <button className={secondary ? "btn-secondary" : "btn-primary"}
+                onClick={onClick}>
             {text}
         </button>
     )

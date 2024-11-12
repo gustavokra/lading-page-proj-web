@@ -20,9 +20,9 @@ export default function Hero() {
                     Já pensou em possuir um chat bot que axilie novos clientes e funcionários e reduza tempo gasto com atendimentos e treinamentos?
                 </p>
                 <div className="flex gap-1">
-                    <span><Button text="Cadastre-se" func={() => console.log("teste1")} /></span>
+                    <span><Button text="Cadastre-se" /></span>
                     <span className="desktop-only">
-                        <Button text="Veja mais" func={() => console.log("teste1")} secondary />
+                        <Button text="Veja mais" secondary />
                     </span>
                 </div>
             </div>
