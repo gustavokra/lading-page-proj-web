@@ -26,7 +26,6 @@
 
 @media (width >= 1280px) {
     #solution {
-        background: var(--bg-color);
         border-top: none;
         height: 100vh;
 

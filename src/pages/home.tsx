@@ -3,7 +3,8 @@ import Hero from "./hero/hero";
 import Solution from "./solution/solution";
 import Pricing from "./pricing/Pricing";
 import Testimonials from "./testimonials/testimonials";
-import Contact from "./contact/Contact";
+import Contact from "./contact/contact";
+import Footer from "./footer/footer";
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             <Testimonials />
             <Pricing/>
             <Contact/>
+            <Footer/>
         </>
     )
 }
