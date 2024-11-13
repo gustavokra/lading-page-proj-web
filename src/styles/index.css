@@ -54,7 +54,9 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     line-height: 1.2;
     color: var(--text-color);
     font-weight: var(--fw-bold);
@@ -67,10 +69,12 @@ h1 {
 
 h2 {
     font-size: var(--fs-xl);
+    color: var(--primary-color)
 }
 
 h3 {
     font-size: var(--fs-lg);
+    color: var(--primary-color)
 }
 
 a {
@@ -93,7 +97,7 @@ ul {
     list-style: none;
 }
 
-@media (width >= 1280px) {
+@media (width >=1280px) {
     :root {
         --fs-lg: 2rem;
         --fs-xl: 2.625rem;
@@ -104,5 +108,12 @@ ul {
         --py-lg: 2.5rem;
         --py-xl: 5rem;
         --pg-lg: 2rem;
+    }
+
+
+    h1,
+    h2,
+    h3 {
+        color: var(--text-color);
     }
 }

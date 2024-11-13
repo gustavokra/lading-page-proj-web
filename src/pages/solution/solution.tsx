@@ -9,13 +9,17 @@ export default function Solution() {
     return (
         <section id="solution">
             <div className="container content">
-                <p className="desktop-only description">
-                    Soluções
-                </p>
-                <h2>Sob medida para você!</h2>
-                <p>
-                    Inovação é com a gente! A datasage já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.
-                </p>
+                <header>
+                    <span>
+                        <p className="desktop-only description">
+                            Soluções
+                        </p>
+                        <h2>Sob medida para você!</h2>
+                    </span>
+                    <p>
+                        Inovação é com a gente! A datasage já conquistou diversos clientes, seja você mais um deles, veja tudo que pode ganhar com nossos serviços.
+                    </p>
+                </header>
                 <div className="layout">
                     <Card
                         imageUrl={Watch}
