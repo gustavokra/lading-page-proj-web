@@ -5,10 +5,10 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': {
+      'https://datasage.netlify.app/': {
         target: 'https://us-central1-projeto-arch-lambda-439723.cloudfunctions.net/function-1',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, '')
+        rewrite: (path) => path.replace(/^https:\/\/datasage\.netlify\.app/, '')
       }
     },
     host: true
