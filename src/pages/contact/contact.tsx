@@ -10,7 +10,7 @@ export default function Contact() {
     const [emailSucess, setEmailSucess] = useState(false);
 
     const sendEmail = () => {
-        fetch('/api/https://us-central1-projeto-arch-lambda-439723.cloudfunctions.net/function-1?' + "email=" + email + '&' + "content=" + content, {
+        fetch('/api/?email=' + email + '&' + "content=" + content, {
             method: 'POST',
             headers: {
                 'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFkYzBmMTcyZThkNmVmMzgyZDZkM2EyMzFmNmMxOTdkZDY4Y2U1ZWYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA4MDkxMjA5MTY1MTIwODY1NjI0IiwiaGQiOiJtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWwiOiJna3JhZW1lckBtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJYeUlSS2pJdkFtUzN0TXVWR1pJNkZ3IiwibmJmIjoxNzMxNDU4MjM1LCJpYXQiOjE3MzE0NTg1MzUsImV4cCI6MTczMTQ2MjEzNSwianRpIjoiNTJmZDJhYTNhNTU3MmIyOTQzZGZiNGJmOGU2Mzc4ZDg5MmExNzdiMyJ9.kASWWe5Fw8un3HzG4ajTA0NhsErAz9aj4iPFgBeZ0azAIr5H5fVBfrNGsj6VA0Cw0-sz_O8hMkiZeqez9K_r0QvvNGNSLyP43eMnWqcVn2WBR68sJMh-Sr83vRlkFMj-Z7vUIOsi43P6n41ZT9VGdPGHtSYyUIh2KkC2pgcVdXnA9MO1IXghph7hzXT6gpLcNvIWPvz5LIc_NwMGY4y9hzZq8_8zFsDjT--fbxenR_XD2ajaGYykJHrNrYlRl8aMgQVtCAbGGpSuqjkd-PgCBsMIU9nFiL_cna_9eE2iBM_X5AR4MwZ17jQAwLRYJqvqfgtnDtLpu0Np2W_YBJVXWA'
