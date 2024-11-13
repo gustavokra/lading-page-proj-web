@@ -3,6 +3,10 @@
   functions = "netlify/functions"
   publish = "dist"
 
+# Configuração para definir a versão do Node.js
+[build.environment]
+  NODE_VERSION = "18.17.1"
+
 # Redirecionamento de todas as rotas para /index.html
 [[redirects]]
   from = "/*"
