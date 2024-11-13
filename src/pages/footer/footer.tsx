@@ -53,6 +53,9 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
+            <footer className="footer">
+                <p>Feito com amor na aula de Programação Web💙 ©2024 AktieTech - Todos os direitos reservados.</p>
+            </footer>
         </footer>
     )
 }

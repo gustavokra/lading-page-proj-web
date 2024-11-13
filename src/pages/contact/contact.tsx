@@ -10,10 +10,10 @@ export default function Contact() {
     const [emailSucess, setEmailSucess] = useState(false);
 
     const sendEmail = () => {
-        fetch('/api/?email=' + email + '&' + "content=" + content, {
+        fetch('/api/?toMail=' + email + '&' + "content=" + content, {
             method: 'POST',
             headers: {
-                'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFkYzBmMTcyZThkNmVmMzgyZDZkM2EyMzFmNmMxOTdkZDY4Y2U1ZWYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA4MDkxMjA5MTY1MTIwODY1NjI0IiwiaGQiOiJtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWwiOiJna3JhZW1lckBtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJYeUlSS2pJdkFtUzN0TXVWR1pJNkZ3IiwibmJmIjoxNzMxNDU4MjM1LCJpYXQiOjE3MzE0NTg1MzUsImV4cCI6MTczMTQ2MjEzNSwianRpIjoiNTJmZDJhYTNhNTU3MmIyOTQzZGZiNGJmOGU2Mzc4ZDg5MmExNzdiMyJ9.kASWWe5Fw8un3HzG4ajTA0NhsErAz9aj4iPFgBeZ0azAIr5H5fVBfrNGsj6VA0Cw0-sz_O8hMkiZeqez9K_r0QvvNGNSLyP43eMnWqcVn2WBR68sJMh-Sr83vRlkFMj-Z7vUIOsi43P6n41ZT9VGdPGHtSYyUIh2KkC2pgcVdXnA9MO1IXghph7hzXT6gpLcNvIWPvz5LIc_NwMGY4y9hzZq8_8zFsDjT--fbxenR_XD2ajaGYykJHrNrYlRl8aMgQVtCAbGGpSuqjkd-PgCBsMIU9nFiL_cna_9eE2iBM_X5AR4MwZ17jQAwLRYJqvqfgtnDtLpu0Np2W_YBJVXWA'
+                'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFkYzBmMTcyZThkNmVmMzgyZDZkM2EyMzFmNmMxOTdkZDY4Y2U1ZWYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA4MDkxMjA5MTY1MTIwODY1NjI0IiwiaGQiOiJtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWwiOiJna3JhZW1lckBtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiI3bGpDaGo5TVVPaHZUWUtmTHYwanp3IiwibmJmIjoxNzMxNTAzMzQ3LCJpYXQiOjE3MzE1MDM2NDcsImV4cCI6MTczMTUwNzI0NywianRpIjoiY2EyMGUyYmQ5YjVkNDI0N2NjNTVhYTAzYWYxYjRiNzgxNGM0MjUyMyJ9.ztV50bhNrZvgXMMrR-KninUZmckqk00XCHp84u4_VJ8LVcQUyzywb3HN6YcGDKJkG9zqDsOzsC0pu5lq6urmyEuYApRs4SLiadPwgN_KQ71xSma3mV6sIzY-AaPpKCWg1ogNdoBUGdvg2OxdnMgyCrW3kviejJb3UjIjgbUZLahyRpkOT6q0idyLLovZfAI8N3qVitKHBXe-EJ4QtPGKyXt4fGxD6mmvyvXeEOpvUw9Q7YKT2GsLmUqopy1iWZBJh1IRc2CSv3zQbfie36XO2PbLbm0XzIveMqI0pjxkuIgVPTX4dU36kHC-KBtqc2NFs7FnA8OTgllaekWbPeXvgg'
             }
         })
             .then(response => response.text())
