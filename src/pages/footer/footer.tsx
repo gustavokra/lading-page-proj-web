@@ -54,7 +54,7 @@ export default function Footer() {
                 </div>
             </div>
             <footer className="footer">
-                <p>Feito com amor na aula de Programação Web💙 ©2024 AktieTech - Todos os direitos reservados.</p>
+                <p>Feito para aula de programação web - 2024</p>
             </footer>
         </footer>
     )
