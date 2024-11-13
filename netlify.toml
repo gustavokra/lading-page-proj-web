@@ -12,3 +12,10 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Redirecionamento para a API no Google Cloud Functions
+[[redirects]]
+  from = "/api/*"
+  to = "https://us-central1-projeto-arch-lambda-439723.cloudfunctions.net/function-1/:splat"
+  status = 200
+  force = true
