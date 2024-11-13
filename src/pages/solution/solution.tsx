@@ -1,7 +1,7 @@
 import Link from "../../assets/link_icon.svg";
 import Watch from "../../assets/watch_icon.svg";
 import UserCheck from "../../assets/user_check_icon.svg";
-import Card from "../../components/Card/Card";
+import Card from "../../components/solution_card/solution_card";
 import "./solution.css";
 import "../../styles/utility.css";
 

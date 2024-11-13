@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     background-color: var(--bg-light);
     color: var(--second-text-color);
 
@@ -27,31 +27,37 @@
     }
 
     footer {
+        margin-top: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-        height: 8vh;
+        height: 10vh;
         background-color: var(--light-gray);
         color: var(--second-text-color);
+        text-align: center;
+        padding: 0.5rem;
     }
 }
 
 @media (width >=1280px) {
 
     #footer {
-        height: 37vh;
-        justify-content: space-around;
+        height: 40vh;
         
         .links {
-            justify-content: space-around;
-            display: flex;
             flex-direction: row;
+            align-items: center;
             gap: 2rem;
             
             .px-icons {
                 padding-left: var(--py-sm);
             }
+        }
+
+        footer {
+            width: 100%;
+            height: 8vh;
         }
     }
 

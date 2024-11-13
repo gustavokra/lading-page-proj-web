@@ -1,6 +1,6 @@
 import Head from '../../assets/head1.png'
 import Head2 from '../../assets/head2.png'
-import TestimonialCard from '../../components/TestimonialCard/TestimonialCard'
+import TestimonialCard from '../../components/testimonial_card/testimonial_card'
 import './testimonials.css'
 export default function Testimonials() {
     return (

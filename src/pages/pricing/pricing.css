@@ -54,6 +54,17 @@
             align-items: center;
             gap: 0.5rem;
         }
+
+        .price {
+            display: flex;
+            align-items: end;
+            justify-content: center;
+    
+            p {
+                margin-left: 8px;
+                padding-bottom: 4px;
+            }
+        }
     }
 
     .premium {
@@ -84,26 +95,12 @@
 
     }
 
-    .price {
-        display: flex;
-        align-items: end;
-        justify-content: center;
-
-        p {
-            margin-left: 8px;
-            padding-bottom: 4px;
-        }
-    }
-
     @media (width >=1280px) {
         #pricing {
             gap: 5rem;
             padding-block: 5rem;
         }
 
-        h3 {
-            font-size: 1.25rem;
-        }
     }
 
 }
