@@ -25,10 +25,8 @@ export default function Pricing() {
                             <p>Treinamento da sua documentação, até 10 mil caracteres</p>
                         </span>
                         <ul className="features">
-                            <li>
                                 <img src={CheckIcon} alt="ícone check" width={24} height={24} />
                                 <p>Adicionar uma funcionalidade</p>
-                            </li>
                         </ul>
                     </div>
                     <div className="pricing-card premium">

@@ -21,7 +21,6 @@
     flex-direction: column;
     margin: auto;
     text-align: center;
-    gap: 1.75rem;
 }
 
 #hero .content > div {
@@ -58,11 +57,6 @@
 
         .content > div :first-child {
             width: 10.625rem;
-        }
-
-        .content p {
-            width: 80%;
-            align-self: center;
         }
 
         .content p:first-of-type {
