@@ -53,7 +53,7 @@ export default function Footer() {
                 </div>
             </div>
             <footer className="footer">
-                <p>Projeto programação web aula professor Sandro - 2024 - Gustavo Kraemer</p>
+                <p>Projeto programação web - 2024 - Gustavo Kraemer</p>
             </footer>
         </footer>
     )
