@@ -13,13 +13,16 @@ export default function Contact() {
         fetch('/api/?toMail=' + email + '&' + "content=" + content, {
             method: 'POST',
             headers: {
-                'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjFkYzBmMTcyZThkNmVmMzgyZDZkM2EyMzFmNmMxOTdkZDY4Y2U1ZWYiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA4MDkxMjA5MTY1MTIwODY1NjI0IiwiaGQiOiJtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWwiOiJna3JhZW1lckBtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJvNFVJcWt5ZkQwOWNEaVdIMEw3Z0dRIiwibmJmIjoxNzMxNTA5NzE3LCJpYXQiOjE3MzE1MTAwMTcsImV4cCI6MTczMTUxMzYxNywianRpIjoiMDY2ZjJlZTVjOGEwYTdlMmIzMmJkZDVkMGMzNjg3MjMzYjYyYzJjOSJ9.NpF0TgFKjfO58MNDB5T0s7SRIfD7QJ4os48rxTJ8EPCXOpgl-mrut9gW_ffqiYWq8xADD7oWGI07PZCiDLu6opX2wzoGxaxn0LgV3hXSdusRY0wIiowak3lmOLitPMmBfa9GaSNodYgRfdT6--izAJ3_TVSXch4Ouvnu7DGxLOp26KhT8W-uamKAFYhzCm9RgNK0-XwqggvBL_MckPmu5Vcub0q64BTTsDSVgcSJYdzzUfk-l6HNLcPwR6qlp6sXsqC4KI3OkD9pCwnNHZrEsrwXc_xxmfqOlyJCqTam5eu4sXhXkBeMvuTR2j_TaYm-v98ZbAlJlM5MM5buI7C2cg'
+                'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ5NzQwYTcwYjA5NzJkY2NmNzVmYTg4YmM1MjliZDE2YTMwNTczYmQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA4MDkxMjA5MTY1MTIwODY1NjI0IiwiaGQiOiJtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWwiOiJna3JhZW1lckBtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJyb0JJcTBSRXh6amhqYjFuNFdDRlNBIiwibmJmIjoxNzMyMjk0Njk5LCJpYXQiOjE3MzIyOTQ5OTksImV4cCI6MTczMjI5ODU5OSwianRpIjoiZWE3NzQxOTc1ZWY1YjMxMTJkMTUzNjRjODRhZjY1NWI2MDk3YTYxMiJ9.TXsKRxCwOJzZCQbU4uawa5MXX1rcHPhpe_8Un0X9pPMgxmqZyUSYRTSPxW9xyrXochK_AMBbn3pvsoJpuFpl6puZwxGfGv_pQz5Bp0HB7nDd8ynrTlgFMJzs_mmbaB4pe5sJ72tz197YqqKRbpeqOH_y16SshAJGLyfWcBtrzVoSDrlGVF7VJNkQFq3lvB91BX6hBii_xSNhy089k_xOBTMcpAQ6DqFzDpUEYazsyppAFUCsYyf1f8Yg4h1dYeIYiEDk5R2qOjDr_VcvnJQsdGWPSHtcbLttKYLuBs1wOiANzWwZ0-v2k6pZCNO3iaW5IXsB5ZyMzm391P-hWOq65Q'
             }
         })
             .then(response => {
                 console.log(response.status)
-                console.log(response.text)
-                setEmailSucess(true);
+                console.log(response.text())
+
+                if(response.status === 200) {
+                    setEmailSucess(true);
+                }
             })
             .catch(error => console.error('Erro:', error));
     }
