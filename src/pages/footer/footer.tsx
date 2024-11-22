@@ -46,7 +46,6 @@ export default function Footer() {
                         <h3>Recursos</h3>
                     </div>
                     <ul>
-                        <li><a>IOS & Android</a></li>
                         <li><a>Teste a Demo</a></li>
                         <li><a>Clientes</a></li>
                         <li><a>API</a></li>
