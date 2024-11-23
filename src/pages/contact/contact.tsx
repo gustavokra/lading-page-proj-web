@@ -13,7 +13,7 @@ export default function Contact() {
         fetch('/api/?toMail=' + email + '&' + "content=" + content, {
             method: 'POST',
             headers: {
-                'Authorization': 'Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ5NzQwYTcwYjA5NzJkY2NmNzVmYTg4YmM1MjliZDE2YTMwNTczYmQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiNjE4MTA0NzA4MDU0LTlyOXMxYzRhbGczNmVybGl1Y2hvOXQ1Mm4zMm42ZGdxLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA4MDkxMjA5MTY1MTIwODY1NjI0IiwiaGQiOiJtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWwiOiJna3JhZW1lckBtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJIT2toenFzZG1td3gwdHBpT3h2MUp3IiwibmJmIjoxNzMyMzEzMjMwLCJpYXQiOjE3MzIzMTM1MzAsImV4cCI6MTczMjMxNzEzMCwianRpIjoiMGFlOWEzMDI1NGMyOTYzY2U0N2U5ZjZiODE5Y2VkY2UxM2E4ZDAzZCJ9.j7LujQiOIaoJTQTJAYYXmhudcnHDfTrhsiq1gVjTShW0oVBSYqiw5EkXQYVJmNw46vgRjNZEPk0lGQ_J029uvfbI5fwRmsUwvjYrE0xzslLyvM4SfEPyCjn4sCuDf6Yzq6ftSlPCBvQZjNmJoiLtDGGhgVYJy4DNnITDLZz1FTZKMStcRB1SoVHNTAAEUFJKMrcEtBjB8Rz_ELxCyaJutviMN33LC4ZaBapT8c_4OR8rve-x3WsyEZyZXXEdZ2hi_6SOrYy3MVlDB0mpHnxYUsJrGGEZS5SeomOUz9Zwv_FH0zZk3ySCX2Ri_gZtqKwhlLhmmG4oAtAGS1mPykH5hQ'
+                'Authorization': 'Bearer '
             }
         })
             .then(response => {
